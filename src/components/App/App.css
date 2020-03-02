@@ -1,0 +1,22 @@
+
+html {
+  text-align: center;
+  font-size: red;
+  margin: 0 auto;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration-line: none;
+  font-size: 1.8rem;
+  color: green;
+}
