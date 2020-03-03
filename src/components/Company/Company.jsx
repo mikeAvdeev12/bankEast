@@ -1,4 +1,5 @@
 import React from 'react';
+import './Company.css'
 
 import { Button } from 'react-bootstrap';
 
@@ -24,13 +25,13 @@ function Company(props) {
 
   if (isOpen) {
     return (
-      <div>
+      <div className="div_container">
         <div>Полное название компании: {fullName}</div>
         <div>ИНН: {INN}</div>
         <div>КПП: {KPP}</div>
         <div>ОГРН: {OGRN}</div>
         {/* {legalAddress.source && <div>Адрес: {legalAddress.source}</div>} */}
-        <table border="1">
+        <table className="table_open" border="1">
           <thead>
             <tr>
               <th>primaryOKVEDRefId</th>
@@ -60,7 +61,7 @@ function Company(props) {
     )
   } else {
     return (
-      <div>
+      <div className="div_container_first_window">
         <div>Название компании: {displayName}</div>
         <div>ИНН: {INN}</div>
         <Button variant="primary" onClick={() => onOpen(_id)} type="submit">
