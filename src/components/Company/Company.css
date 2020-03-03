@@ -1,0 +1,12 @@
+
+.div_container {
+  margin: 0 auto;
+}
+
+.div_container_first_window ~ div {
+  margin-top: 30px;
+}
+
+.table_open {
+  margin-top: 10px;
+}
